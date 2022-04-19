@@ -4,7 +4,7 @@
 ### Mission Statement: We here at Board it up! strive to deliver the best board games on the market. Everything from fun themed Risk and the classics such as Monopoly and life. login to browse our action packed option of board games, or visit our store location.
 
 # Link to website
-[Link to website](https://karma-runner.github.io)
+[Link to website](https://bharms127.github.io/IST256_Final_Project/)
 
 ## IST 256 Final Project
 **Description:**
