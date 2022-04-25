@@ -5,8 +5,9 @@
     <title>Final</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
-        #body{
+        body {
             background-image: url('data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxMQExYQExQWFhYTEBAWFhYTFhAXFhYWFhYXGBYTFhYZHikhGRsmHBYWIjIiJiosLy8vGCA1OjUtOSkuLywBCgoKDg0OHBAQHC4mIScuLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLv/AABEIAOEA4QMBIgACEQEDEQH/xAAaAAADAQEBAQAAAAAAAAAAAAABAgMABAUH/8QAMBAAAgAEBAQGAwACAwEAAAAAAAECAxEhEhMxUQRBcYEUMmGRobEiwfDR4WJy8YL/xAAYAQEBAQEBAAAAAAAAAAAAAAABAAIDBP/EAC4RAAIBBAAGAQMDBAMAAAAAAAABAhESITEDEyIyQWGhI0KBM1FxBBTB0VJikf/aAAwDAQACEQMRAD8A+1DyzYBI4sJvZ5+zLHj0ZCGKpnObsUhlEsBJczMR5egs/TuK5lLbGTxWfWxU8i5pxs86JnUieStwZrJ50Z4afD7hoxUNDcWJU7F6NNV6ipOLUnmv+qUg/JVClBclPCDAOI1Q2MtmotRwzgi17nTwXPt+w+FW7+BYnl6Xrv6G208I4Rg4O6Wjoj0fQ5wLiG7UV3QvkrcF07Ga5jrEMnT3BHFVVIRznC8K5bhkznE6NUCjrU3crbPOhi6FyjYieSgnDYJvLuIilK9jZZJ0CUG3VDk49QZrMvyClDTkp4QYNShCZ+KxK9NyS4t7L5GjeiUlDDOwxyeLey+TFay50DqxI5593bYeJBlQhoq34ZKXLadWjoxrc0ejIjsy3y8IMcLbqjS1R1disvQWfp3KvgnBJX/kbMW5LCxDqRPARfN34Jy7ambs0GMVIPZutOklgb5f7Ky2kqPUokc83V/3IVkzJcvqRZxJ6AwsSTr2Lg8YGC5iqxcaIcTC4qUvqFlJI0pkLr+lnLBKaabWjR0xTU+Y05WfQ5YYeY9wN8rCNNltuqVUGRC4XV2R0ydPcTi/L3RV8FYqcz8jZ0O6M0cJ6EvRdEUlaMJczDFUSh1tUzmw7ojxvLv+jnl6rqiUaqoS4rg7UdeF7DSnRepUhNVzNamnHl5Rp35LrSiRzZMWzOmUrlzVaYCxcTLODJi2ZjvMV7L+3X7gwolNdHbYbOXqLEsV18gl+4zaapDYII23RsrgRNS2rj5q9SfoIYXX8k44mnRBgdXR3M4G77g8l30t/egmaSuq9fBXLWxxZ8W/0dHi4dn8f5JeFi3X92Jexnn9P4K8PE4q1uVaOeB5dnz2HU9O179Ae8Goyio0lsfEwqBO7NgJxTlDZ1ttTqX8Frv+R4oaXQuN7ghmqOyr3Gy2X8mZVb6Neh8CIcRE4aUtWo3ikuT+BI1mact/UknXJqbi1SG/ROCdE2k3q1sdeWtjmhkOH8nS1+fIr4uHZ/H+RfozCiXX8kp0xwuidFY0mJxOkV0GKW4/yWj39BpMlwurp2qOKezKUrvXwVyIdvs5Yp0SbVdH6HZjOaLhm3W136hH2b4i/wCHwGR+dcV6Up3r/grkwrl9iSJbgrXnTT0/9LOIHvAwSt6tk8b3HgVbsXLY0LpYn6CCafUZw0BiYzdbAwB/Jp1r0gxMJsBhwFJkC0jTuUocnGaroNbsGbOV1bOqPRkDnkP8l1PQDtFfVzoWXoS4zyrr+mCZqwydexU8hfX6f4OQ9NAoco9xfo+6m43VdCMnzLqjrkcykSK6mC5d7vCcHE+Z9vpHUPDoCxk1L6iocnB+bszuOfi/L3Rx1NUuyZv5XTsMWr6nTwXPt+y8KsuiJz+XcLrsFy+X1FJvlf8A1f0eadcOq6nSVbSpzs6oS4Xyrv8AY8ZKbqCTqDXklP7KehyqMSYbOlLBpgqGgDM0fRlWhNV6hyUepwVO3hPL3ZpxoYjxOY6DQalAR6EzOzVbMFTEjFQeYNjEmSsd60oGgUx1oyurEiakYfyroNnMMas0q9CShezFZ2YnWLpAqpeK+5sOG/Y0EaSo2kaOJOydegZNUjbXybMNk+ouF7Fqk8aKKu7yTeG25lNrbc01VdhIIWnWnMcUqzDclKi0WwAhj9PcEUxbmoZOzou00UOK2hPwi3ZVOmtg5sO69xq1oLYyzLZlEBw4uwKDQ2IlV4ehcql66GzB4nYi09iWdmZdPYPgxXA4cNwwKi/TDMdVYvNBcVbXz/kXOY6hI5b2LwxKnYn6M8NuT6yM2ZgpzrX4/wDRPEN2prb3G4lYqUvSunYipbTTo9UKSpkJSkpUjot4RbsDmZf4q5fNh3Xuc0+FxOquqK6JOuxmoxVYbHlz8To0Whhrc45MLTq1TU7VEgfo1w8rqNgMHEtzBk3SISUeoMbGhVdSpQzep4Qq1KpE5iom1qc2fFv8IaNg5rh4YOI8z/uQ/B+b/wCX9opLgUSxNVb6j5ahuv2LlihhcN3X+NlSQcT/AKg2FGdHV9egQCzXVPoabayFgbepU8hckrSMMJ1SdPf7NlLb7OabMcLaTtbbY13HNJ8J3SK8Z5e6OI6ZUTjdIrqldvot4eHb5Yp24KUHxXdEpBouiFmEsx7/AEPLddTNKG+Yp9KMh4TOEk4nuGxrZsePU0tBghsGJUL0VPuGIRD4mNgQrBSV+hZXPsNM0fRix20FxN2ClckpqKtZwnXwz/Hux4uGh2+WI1hdEabuwc4xfC6mVjhsTDBE26MrloNGmuZlEjFctGK4OSxMthheHUoSm/oq1wblFQVyNMdU0uZz+Fi9C0Gpcq26MxiuJmRGXFhVHqhseKyJzNWGRr2GmKmVN3WeNFMAcYxIysnWXRoMSroLhpd8iksE7yvoyr4C1NXE/FQ+pOKU43iWj39Lfo5jv4byrv8AbNtW6OcJPiu2RKVLcDq+li2cvU0/TuiIJXZYSm+E7Yj5THlrDqOtOwswzWp05ah1ILirYTLZkVHQqKnlk1FSwcVbCTNTStSpiplTdbfGhsAcaHIMlk1Po0PF+WnIGBq+wZPPsNM0fRg3TBKKkrmS8VD6mpiuvk4ju4Ty92batyjlCT4rtkaCBp1ZTGaPQQzs6dmEPjMIYqFzGYeA2AlNm4LUrUtkunLHn+V9DhxPdnRn4vxpSofCevwajjZiafEdYlOHX4r+5jxoSF4Vh2Coq2MUzU6XKlvkBUXAc/i/T5GldAmodxSfr2Eg1XUMt476UHyqXroNaKhzcXKVy0UwrZEJurKZvoDBiuCxs3xGpqkRZWvYthQigw3DjB5Hh9CpIUeAGA2hCk06sZ6diNSjirYGV6inQJpy7RpehpmguKljYsVgp5G5W2+dCVLJCZXqbMF5CHR3An8u5JFWsXpQ2VTmKdDE4SlK5aKYVshIjZvoFKtzNKHVyUsRBCUJxWuLneg0qCkoYkWMRzvQwWsedApmQ7r4ObiViape3K5A6uD0fX9G6W5OSm+J0shKhaabTSrqzrhnQvmtd0JxEX4vocSBK4W+VhHdFd1V+hoLa26jcP5V/czT9O4ejVtFf+Rsxbr4OBy3s/ZljrQ9phfW3ihz8LZOtr8y0TsCMRO4POTonb0go9mUhiSVw4SEx3fb6LZmS5aqi0TroLQWTr2Llo1H6iqwVFjFHlhShXXYFSGzFuvg0ej6HM2KVTM58vCKx7glPm1TqaU7DxqxV8Dbi/8AI+JbkWvQBdFoF9TYkqw7YswVFs1W3pFo9hoYktWl1KnDxV4uyJZwZa5aqjpjjTVE0+hLC9mS4aGkS7/R3Ji+nAKPN6mc2F7MB1mC4f7dfuR8PDt8slG8NodNTpcSJRQN3JP9xmlTo36Fhibs+Y/hodvlghgau+RTMRP0EEvv+STiw2WiGgeKzBFA26oMEOG7HFDCuuzr4oPlIGJhzEDCzP8AJ1dPt+Aw31FjVE3zVWhk6aizHiTW6IaqmdnPnxat9EXlQqJVerr9nOuGi9Pc6ZP4pJ63+zUqeDnCtevXsWd+KqtyHiIt/hHRPWJUW5Dw0Xp7jGlMhxFKvRWno64YbCx20EXEQqwcWPTkZz5OknFrp2Zx7gctPkaKB67X9jQ8RCTr4CNF3/I0Kw2GV7MVPFdDJUIs19By0TzGUxoRwMl7Kf8A0+AwX1GcIsFtRnEDNRpTq2RzWaXLUV3qbKY8KoqM0/Ry4d1evXsVy0rrXuFRsd3VEJlsF7NSrXpNjZjZbMODNJ+wjyxqHJxTaapa3IFnBtqzqOmPRkSEqJ4ld6ndQu0P1coEvQE7TuJG7hl6lTyN1egQ6QUPOcb3fuxpcFeVvNTsmiw6g4V1Tre/MtGrPoGsFbd1jE4tSNWXlae5UoKnzMaBAUEmaE6lSpX2YOSLXudPBc+37LqBbL4BEqaW6C5VVDMeHY7gzfK/+r+jzztQ+BbL2JOgyhzM6E4Xyrv9jxixWNDqHs0ni0BVGoSbDZdg0wVDQDRKz6MqjbXqGJR6kKsvJ0GlDC4nMdKGg1KCzNCVSpUbrMFzEKmK0ucv2KYycyVjvWlO41BoGWtF3YkQyMP5VrTlQ3i/+Pz/AKLTXWF9DhwPZ+zFZ2Ym3B0h/s7IFiWLSoWsN9QyLQr+5mnadw80NtJRu8gzvT5JeE/5fH+wUZ1Ji8aMcP6neSlwYPWvYdxVtuaMCD2b10rQMn1+Bk6WGxLdCRBVsXGMcxC72BlepoXTUbMW690TdNCoqWZEPFcqfP8AoeXMx+lO5yRQOuj9mdHCKla201NNJLByhOUpUlos4aXBm+g0TsRoC9m5txxEqlW4sx4VXUaCJJXZPiHVUV7rQFsX218ieL/4/P8Aouoa33OHA9n7M74HZdEakktGOHJzrcBvD3A5lbUNN5dxEgpUZSadFobJ9fgnFOwfjSveh01OPioW4rLkiTrspxUFWOykE/E8NKdymV6nNw8LUSs+f0dtSljRcNXqstk8r1CPUwVZvlxMQn69h8TBhxa8hWAn1qiJy9V1OkhMgUKbWq0ILiovT2Kl2jEWuFhnVFqGAEr8km+YYraB6NJfcUOYbMY+WhWNlL6mgShpmj6EJ8xwUpzEh4ht0ejKnkL1FWPYWXkOsPv9iOWmFNw2FuoQg+G6sHGeXujkOymKzN4aH+ZRklgJwfEdYlYNF0QswlmMeW66maUN8xT6UZFRXDQnmNlsU7NnPxXmfb6Dwnm7MrkKK716hhlqG610NXYoc+W7r/yXJMGYyihDR0rfoEsdk47aAUbClSvUelmHgNgQkcVCrUopwdWNNdvURAhuVwIlgZJyyhDD4DDUzy2LhZobWZQnMQbNONuUCY6prXZHN4eLb6OmBFRrQHFcTZKU8KSeqDG66Cx6hla9i9mbm3Z40DLY+ah0crJZCf0+3ybiIcV1yRKXKiTTpp0OqToxsNEVWsDGCl1vZoWhYoa3MUg0LRpdeGThtdjZq/qgn6d0RFKpznN8N0Q2WwwxKDXmWWnY5uN5d/0SdcGnBQVyKZ8LsnrbRgUDOWV5l1X2eg0T6dFD6mZCQvcMV7IESNBqZ9mq/aLlsdRocgx2Ely9Dx30FUDGk8+w7KtCUVJXMWKYidK3QYlUpL0B4FO7DE8t3obxMO/wzcV5X2+ziNRVUYnNwdEdviYd/hmOIw2Ixz5ej0hJhjGEejiaBCUMYmHD0Rj1DK17GMaejku/8lUcrMYoj/UeCvD8ykWhjGXs6cP9NEykGhjCzPD2JP07oiAxqOjjx+46lp2ObjeXf9GMZhs78Xs/8ISvMuq+z0TGGZn+n0ycepoNQmDwP3DkGYxRLjaQ8nn2HZjA9muH2kx4DGFmeHsTifK+32cRjGoaOXH7jGMY2cT/2Q==');
         }
 
@@ -35,12 +36,12 @@
 
         #footer {
             background-color: #2e7f9b;
-            margin: 0px;
             padding: 10px;
             text-align: center;
             position: fixed;
             bottom: 0px;
             width: 100%;
+            height: 40px;
         }
 
         #image {
@@ -49,16 +50,31 @@
             position: static;
         }
 
+        container {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            margin-bottom: 400px;
+        }
+
         #container1 {
             width: 60%;
         }
 
         #container2 {
-            visibility: hidden;
+            float: left;
+            width: 50%;
+
         }
 
         #container3 {
-            visibility: hidden;
+            width: 50%;
+            float: right;
+
+        }
+
+        #space{
+            float: left;
         }
 
         #imageCard {
@@ -78,7 +94,7 @@
         }
 
         #card {
-            width: 24rem;
+            width: 25rem;
         }
 
         #cardCont {
@@ -86,6 +102,7 @@
             flex-direction: row;
             justify-content: center;
             align-items: center;
+            float: left;
         }
 
         #intro {
@@ -101,9 +118,11 @@
 </head>
 <body id="body">
 <header id="head">
-    <img id="image" src="BIUnew.jpg" alt="BIU">
-    <span id="webTitle">Board it up!</span>
-    <span id="moto">Best Board Games Around!</span>
+    <div class="container">
+        <img id="image" src="BIUnew.jpg" alt="BIU">
+        <span id="webTitle">Board it up!</span>
+        <span id="moto">Best Board Games Around!</span>
+    </div>
 </header>
 
 <script>
@@ -119,7 +138,7 @@
             userName = document.getElementById("EA").value;
             document.getElementById("PW").value = "";
             document.getElementById("EA").value = "";
-            document.getElementById("failedLogin").innerHTML = (userName+" Successfully Registered");
+            document.getElementById("failedLogin").innerHTML = (userName + " Successfully Registered");
             console.log(passWord);
             console.log(userName);
         } else {
@@ -138,19 +157,19 @@
             loggedIn();
         } else {
             document.getElementById("failedLogin").innerHTML = "incorrect password/username  please retry";
-            //document.getElementById("PW").value = "";
-            //document.getElementById("EA").value = "";
-            console.log(document.getElementById("PW").value)
-            console.log(document.getElementById("EA").value)
-            console.log(passWord)
-            console.log(userName)
+            document.getElementById("PW").value = "";
+            document.getElementById("EA").value = "";
+            //console.log(document.getElementById("PW").value)
+            //console.log(document.getElementById("EA").value)
+            //console.log(passWord)
+            //console.log(userName)
         }
     }
 
     function loggedIn() {
         document.getElementById("container1").style.display = "none";
-        document.getElementById("container2").style.visibility = "visible";
-        document.getElementById("container3").style.visibility = "visible";
+        document.getElementById("container2").style.display = "block";
+        document.getElementById("container3").style.display = "block";
     }
 
     function insertRow() {
@@ -160,10 +179,13 @@
         let cell2 = row.insertCell(1);
         let cell3 = row.insertCell(2);
         let cell4 = row.insertCell(3);
+        let y = document.getElementById("quantity").value;
+        let x = document.getElementById("price").value;
+        x = x * y;
         cell1.innerHTML = document.getElementById("gameName").value;
-        cell2.innerHTML = document.getElementById("quantity").value;
+        cell2.innerHTML = y;
         cell3.innerHTML = document.getElementById("theme").value;
-        cell4.innerHTML = document.getElementById("price").value;
+        cell4.innerHTML = x;
         addCart();
     }
 
@@ -192,12 +214,14 @@
     const cartQuantity = [];
 
     function addCart() {
-        let x = document.getElementById("price").value;
-        cartPrice.unshift(x);
-        //console.log(cartPrice)
+
         let y = document.getElementById("quantity").value;
         cartQuantity.unshift(y);
         //console.log(cartQuantity)
+        let x = document.getElementById("price").value;
+        x = x * y;
+        cartPrice.unshift(x);
+        //console.log(cartPrice)
         addCarttotals();
     }
 
@@ -231,6 +255,15 @@
         qSum = 0;
     }
 
+    function checkout() {
+        for (let i = 0; cartQuantity.length > i; i++) {
+            document.getElementById("checkout").deleteRow(1);
+        }
+        cartPrice.length = 0;
+        cartQuantity.length = 0;
+        alert("Thank you for your pruchase!");
+        addCarttotals();
+    }
 
 </script>
 
@@ -263,87 +296,94 @@
     <button type="submit" class="btn btn-primary" onclick="reigster()">Register</button>
 </div>
 
-<div class="container" id="container2">
-    <br>
-    <p>Start Shopping!</p>
-    <div id="card" class="card">
-        <select id="gameName" class="form-control form-control-sm" onchange="gameSelector">
-            <option>Risk</option>
-            <option>Pandemic</option>
-            <option>Checkers</option>
-            <option>Clue</option>
-            <option>Chess</option>
-            <option>Sorry!</option>
-            <option>Scrabble</option>
-            <option>Battleship</option>
-            <option>Catan</option>
-            <option>Monopoly</option>
-        </select>
-        <img id="imageCard" class="card-img-top"
-             src="https://m.media-amazon.com/images/I/71ELGivFeJL._AC_SL1500_.jpg" alt="Risk">
-        <div class="card-body">
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                the card's content.</p>
-            <div class="container" id="cardCont">
-                <label>Quantity:</label>
-                <select id="quantity" class="form-control form-control-sm">
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                </select>
-                <label>&nbsp;Theme:</label>
-                <select id="theme" class="form-control form-control-sm">
-                    <option>Dark</option>
-                    <option>Light</option>
-                </select>
-                <label>&nbsp;Price:</label>
-                <select id="price" class="form-control form-control-sm">
-                    <option>30</option>
-                </select>
+<div class="container" id="container">
+    <div class="container" id="container2">
+        <br>
+        <p>Start Shopping!</p>
+        <div id="card" class="card">
+            <select id="gameName" class="form-control form-control-sm" onchange="gameSelector">
+                <option>Risk</option>
+                <option>Pandemic</option>
+                <option>Checkers</option>
+                <option>Clue</option>
+                <option>Chess</option>
+                <option>Sorry!</option>
+                <option>Scrabble</option>
+                <option>Battleship</option>
+                <option>Catan</option>
+                <option>Monopoly</option>
+            </select>
+            <img id="imageCard" class="card-img-top"
+                 src="https://m.media-amazon.com/images/I/71ELGivFeJL._AC_SL1500_.jpg" alt="Risk">
+            <div class="card-body">
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                    the card's content.</p>
+                <div class="container" id="cardCont">
+                    <label>Quantity:</label>
+                    <select id="quantity" class="form-control form-control-sm">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                    </select>
+                    <label>&nbsp;Theme:</label>
+                    <select id="theme" class="form-control form-control-sm">
+                        <option>Dark</option>
+                        <option>Light</option>
+                    </select>
+                    <label>&nbsp;Price(unit):</label>
+                    <select id="price" class="form-control form-control-sm">
+                        <option>30</option>
+                    </select>
+                    <br>
+                </div>
                 <br>
+                <a class="btn btn-primary" id="addTocart" onclick="insertRow()">add to cart</a>
             </div>
-            <br>
-            <a href="#" class="btn btn-primary" id="addTocart" onclick="insertRow()">add to cart</a>
         </div>
     </div>
+    <div class="container" id="container3">
+        <br>
+        <!--
+        first is version 5 and second is version 6
+        -->
+        <i class="fas fa-shopping-cart">5.15 cart</i>
+        <i class="fa-solid fa-cart-shopping">6 cart</i>
+        <i class="fa fa-car" aria-hidden="true"></i> car <br>
+        <button type="button" class="btn btn-danger" onclick="myDeleteFunction()">Delete last item</button>
+        <button type="button" class="btn btn-success" onclick="checkout()">Checkout</button>
+        <br>
+        <br>
+        <table class="table table-dark" id="checkout">
+            <thead>
+            <tr>
+                <th scope="col">Game</th>
+                <th scope="col">Quantity</th>
+                <th scope="col">Theme</th>
+                <th scope="col">Total</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <th scope="row">Total Quantity</th>
+                <td colspan="1" id="cartQuantity">0</td>
+                <th scope="row">Total Price</th>
+                <td id="cartTotal">0</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+<div class="container" id="space">
+    <br>
+    <br>
+    <br>
 </div>
 
-<div class="container" id="container3">
-    <br>
-    <button type="button" class="btn btn-danger" onclick="myDeleteFunction()">Delete last item</button>
-    <button type="button" class="btn btn-success">Checkout</button>
-    <br>
-    <br>
-    <table class="table table-dark" id="checkout">
-        <thead>
-        <tr>
-            <th scope="col">Game</th>
-            <th scope="col">Quantity</th>
-            <th scope="col">Theme</th>
-            <th scope="col">Total</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr>
-            <th scope="row">Total Quantity</th>
-            <td colspan="1" id="cartQuantity">0</td>
-            <th scope="row">Total Price</th>
-            <td id="cartTotal">0</td>
-        </tr>
-        </tbody>
-    </table>
-</div>
-<br>
-<br>
-<footer id="footer">
-    &copy; Board it up! - 123 Fake st Pottstown Pa, (484) 345-5745
-</footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
 </body>
-</html>
-
-
-</body>
+<footer id="footer">
+    &copy; Board it up! - 123 Fake st Pottstown Pa, (484) 345-5745
+</footer>
 </html>
