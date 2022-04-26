@@ -1,7 +1,7 @@
 # Board it up!
 
 *Best Board Games Around!*
-### Mission Statement: We here at Board it up! strive to deliver the best board games on the market. Everything from fun themed Risk and the classics such as Monopoly and life. login to browse our action packed option of board games, or visit our store location.
+### Mission Statement: We here at Board it up! strive to deliver the best board games on the market. Everything from fun themed Risk and the classics such as Monopoly and catan. login to browse our action packed option of board games, or visit our store location.
 
 # Link to website
 [Link to website](https://bharms127.github.io/IST256_Final_Project/)
@@ -14,49 +14,20 @@ Customers will need to be able to create an account.
 Be able to select items into a shopping cart.
 Then be they must be able to check out.
 
-## Additional Notes
-Points to callout here.  Delete if unused.
-
 # Feedback
 
 ## Usability Session 1
 
-**Passenger Notes:** I noticed
+**Passenger Notes:** failed login/register hard to read
 
-**Driver Notes:** User 1 provided the following feedback...
+**Driver Notes:** no font awesome icon, card wasn't finished yet, only had Risk. Also, he cart has no limit so it can just keep going.
 
-**Takeaways:** I plan to change...
+**Takeaways:** I plan to change the color of the failed attempt message,add a font awesome icon, and get the rest of the card working. lastly, setting a cart limit.
 
 ## Usability Session 2
 
-**Passenger Notes:** I noticed
+**Passenger Notes:** Right side of the screen is rather empty (white space)
 
-**Driver Notes:** User 1 provided the following feedback...
+**Driver Notes:** the cart can be hard to follow as it goes across the entire screen, checkout button doesn't work 
 
-**Takeaways:** I plan to change...
-
-# Angular Details
-
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+**Takeaways:** I plan to change the page by moving the cart next to the card of games, by doing this the white spec issue is removed and the cart is less wide meaning it's easier to read.

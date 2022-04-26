@@ -3,9 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <title>Final</title>
+
+    <!-- imports for bootstrap and font awesome -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- css styles -->
     <style>
         body {
             background-image: url('data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxMQExYQExQWFhYTEBAWFhYTFhAXFhYWFhYXGBYTFhYZHikhGRsmHBYWIjIiJiosLy8vGCA1OjUtOSkuLywBCgoKDg0OHBAQHC4mIScuLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLv/AABEIAOEA4QMBIgACEQEDEQH/xAAaAAADAQEBAQAAAAAAAAAAAAABAgMABAUH/8QAMBAAAgAEBAQGAwACAwEAAAAAAAECAxEhEhMxUQRBcYEUMmGRobEiwfDR4WJy8YL/xAAYAQEBAQEBAAAAAAAAAAAAAAABAAIDBP/EAC4RAAIBBAAGAQMDBAMAAAAAAAABAhESITEDEyIyQWGhI0KBM1FxBBTB0VJikf/aAAwDAQACEQMRAD8A+1DyzYBI4sJvZ5+zLHj0ZCGKpnObsUhlEsBJczMR5egs/TuK5lLbGTxWfWxU8i5pxs86JnUieStwZrJ50Z4afD7hoxUNDcWJU7F6NNV6ipOLUnmv+qUg/JVClBclPCDAOI1Q2MtmotRwzgi17nTwXPt+w+FW7+BYnl6Xrv6G208I4Rg4O6Wjoj0fQ5wLiG7UV3QvkrcF07Ga5jrEMnT3BHFVVIRznC8K5bhkznE6NUCjrU3crbPOhi6FyjYieSgnDYJvLuIilK9jZZJ0CUG3VDk49QZrMvyClDTkp4QYNShCZ+KxK9NyS4t7L5GjeiUlDDOwxyeLey+TFay50DqxI5593bYeJBlQhoq34ZKXLadWjoxrc0ejIjsy3y8IMcLbqjS1R1disvQWfp3KvgnBJX/kbMW5LCxDqRPARfN34Jy7ambs0GMVIPZutOklgb5f7Ky2kqPUokc83V/3IVkzJcvqRZxJ6AwsSTr2Lg8YGC5iqxcaIcTC4qUvqFlJI0pkLr+lnLBKaabWjR0xTU+Y05WfQ5YYeY9wN8rCNNltuqVUGRC4XV2R0ydPcTi/L3RV8FYqcz8jZ0O6M0cJ6EvRdEUlaMJczDFUSh1tUzmw7ojxvLv+jnl6rqiUaqoS4rg7UdeF7DSnRepUhNVzNamnHl5Rp35LrSiRzZMWzOmUrlzVaYCxcTLODJi2ZjvMV7L+3X7gwolNdHbYbOXqLEsV18gl+4zaapDYII23RsrgRNS2rj5q9SfoIYXX8k44mnRBgdXR3M4G77g8l30t/egmaSuq9fBXLWxxZ8W/0dHi4dn8f5JeFi3X92Jexnn9P4K8PE4q1uVaOeB5dnz2HU9O179Ae8Goyio0lsfEwqBO7NgJxTlDZ1ttTqX8Frv+R4oaXQuN7ghmqOyr3Gy2X8mZVb6Neh8CIcRE4aUtWo3ikuT+BI1mact/UknXJqbi1SG/ROCdE2k3q1sdeWtjmhkOH8nS1+fIr4uHZ/H+RfozCiXX8kp0xwuidFY0mJxOkV0GKW4/yWj39BpMlwurp2qOKezKUrvXwVyIdvs5Yp0SbVdH6HZjOaLhm3W136hH2b4i/wCHwGR+dcV6Up3r/grkwrl9iSJbgrXnTT0/9LOIHvAwSt6tk8b3HgVbsXLY0LpYn6CCafUZw0BiYzdbAwB/Jp1r0gxMJsBhwFJkC0jTuUocnGaroNbsGbOV1bOqPRkDnkP8l1PQDtFfVzoWXoS4zyrr+mCZqwydexU8hfX6f4OQ9NAoco9xfo+6m43VdCMnzLqjrkcykSK6mC5d7vCcHE+Z9vpHUPDoCxk1L6iocnB+bszuOfi/L3Rx1NUuyZv5XTsMWr6nTwXPt+y8KsuiJz+XcLrsFy+X1FJvlf8A1f0eadcOq6nSVbSpzs6oS4Xyrv8AY8ZKbqCTqDXklP7KehyqMSYbOlLBpgqGgDM0fRlWhNV6hyUepwVO3hPL3ZpxoYjxOY6DQalAR6EzOzVbMFTEjFQeYNjEmSsd60oGgUx1oyurEiakYfyroNnMMas0q9CShezFZ2YnWLpAqpeK+5sOG/Y0EaSo2kaOJOydegZNUjbXybMNk+ouF7Fqk8aKKu7yTeG25lNrbc01VdhIIWnWnMcUqzDclKi0WwAhj9PcEUxbmoZOzou00UOK2hPwi3ZVOmtg5sO69xq1oLYyzLZlEBw4uwKDQ2IlV4ehcql66GzB4nYi09iWdmZdPYPgxXA4cNwwKi/TDMdVYvNBcVbXz/kXOY6hI5b2LwxKnYn6M8NuT6yM2ZgpzrX4/wDRPEN2prb3G4lYqUvSunYipbTTo9UKSpkJSkpUjot4RbsDmZf4q5fNh3Xuc0+FxOquqK6JOuxmoxVYbHlz8To0Whhrc45MLTq1TU7VEgfo1w8rqNgMHEtzBk3SISUeoMbGhVdSpQzep4Qq1KpE5iom1qc2fFv8IaNg5rh4YOI8z/uQ/B+b/wCX9opLgUSxNVb6j5ahuv2LlihhcN3X+NlSQcT/AKg2FGdHV9egQCzXVPoabayFgbepU8hckrSMMJ1SdPf7NlLb7OabMcLaTtbbY13HNJ8J3SK8Z5e6OI6ZUTjdIrqldvot4eHb5Yp24KUHxXdEpBouiFmEsx7/AEPLddTNKG+Yp9KMh4TOEk4nuGxrZsePU0tBghsGJUL0VPuGIRD4mNgQrBSV+hZXPsNM0fRix20FxN2ClckpqKtZwnXwz/Hux4uGh2+WI1hdEabuwc4xfC6mVjhsTDBE26MrloNGmuZlEjFctGK4OSxMthheHUoSm/oq1wblFQVyNMdU0uZz+Fi9C0Gpcq26MxiuJmRGXFhVHqhseKyJzNWGRr2GmKmVN3WeNFMAcYxIysnWXRoMSroLhpd8iksE7yvoyr4C1NXE/FQ+pOKU43iWj39Lfo5jv4byrv8AbNtW6OcJPiu2RKVLcDq+li2cvU0/TuiIJXZYSm+E7Yj5THlrDqOtOwswzWp05ah1ILirYTLZkVHQqKnlk1FSwcVbCTNTStSpiplTdbfGhsAcaHIMlk1Po0PF+WnIGBq+wZPPsNM0fRg3TBKKkrmS8VD6mpiuvk4ju4Ty92batyjlCT4rtkaCBp1ZTGaPQQzs6dmEPjMIYqFzGYeA2AlNm4LUrUtkunLHn+V9DhxPdnRn4vxpSofCevwajjZiafEdYlOHX4r+5jxoSF4Vh2Coq2MUzU6XKlvkBUXAc/i/T5GldAmodxSfr2Eg1XUMt476UHyqXroNaKhzcXKVy0UwrZEJurKZvoDBiuCxs3xGpqkRZWvYthQigw3DjB5Hh9CpIUeAGA2hCk06sZ6diNSjirYGV6inQJpy7RpehpmguKljYsVgp5G5W2+dCVLJCZXqbMF5CHR3An8u5JFWsXpQ2VTmKdDE4SlK5aKYVshIjZvoFKtzNKHVyUsRBCUJxWuLneg0qCkoYkWMRzvQwWsedApmQ7r4ObiViape3K5A6uD0fX9G6W5OSm+J0shKhaabTSrqzrhnQvmtd0JxEX4vocSBK4W+VhHdFd1V+hoLa26jcP5V/czT9O4ejVtFf+Rsxbr4OBy3s/ZljrQ9phfW3ihz8LZOtr8y0TsCMRO4POTonb0go9mUhiSVw4SEx3fb6LZmS5aqi0TroLQWTr2Llo1H6iqwVFjFHlhShXXYFSGzFuvg0ej6HM2KVTM58vCKx7glPm1TqaU7DxqxV8Dbi/8AI+JbkWvQBdFoF9TYkqw7YswVFs1W3pFo9hoYktWl1KnDxV4uyJZwZa5aqjpjjTVE0+hLC9mS4aGkS7/R3Ji+nAKPN6mc2F7MB1mC4f7dfuR8PDt8slG8NodNTpcSJRQN3JP9xmlTo36Fhibs+Y/hodvlghgau+RTMRP0EEvv+STiw2WiGgeKzBFA26oMEOG7HFDCuuzr4oPlIGJhzEDCzP8AJ1dPt+Aw31FjVE3zVWhk6aizHiTW6IaqmdnPnxat9EXlQqJVerr9nOuGi9Pc6ZP4pJ63+zUqeDnCtevXsWd+KqtyHiIt/hHRPWJUW5Dw0Xp7jGlMhxFKvRWno64YbCx20EXEQqwcWPTkZz5OknFrp2Zx7gctPkaKB67X9jQ8RCTr4CNF3/I0Kw2GV7MVPFdDJUIs19By0TzGUxoRwMl7Kf8A0+AwX1GcIsFtRnEDNRpTq2RzWaXLUV3qbKY8KoqM0/Ry4d1evXsVy0rrXuFRsd3VEJlsF7NSrXpNjZjZbMODNJ+wjyxqHJxTaapa3IFnBtqzqOmPRkSEqJ4ld6ndQu0P1coEvQE7TuJG7hl6lTyN1egQ6QUPOcb3fuxpcFeVvNTsmiw6g4V1Tre/MtGrPoGsFbd1jE4tSNWXlae5UoKnzMaBAUEmaE6lSpX2YOSLXudPBc+37LqBbL4BEqaW6C5VVDMeHY7gzfK/+r+jzztQ+BbL2JOgyhzM6E4Xyrv9jxixWNDqHs0ni0BVGoSbDZdg0wVDQDRKz6MqjbXqGJR6kKsvJ0GlDC4nMdKGg1KCzNCVSpUbrMFzEKmK0ucv2KYycyVjvWlO41BoGWtF3YkQyMP5VrTlQ3i/+Pz/AKLTXWF9DhwPZ+zFZ2Ym3B0h/s7IFiWLSoWsN9QyLQr+5mnadw80NtJRu8gzvT5JeE/5fH+wUZ1Ji8aMcP6neSlwYPWvYdxVtuaMCD2b10rQMn1+Bk6WGxLdCRBVsXGMcxC72BlepoXTUbMW690TdNCoqWZEPFcqfP8AoeXMx+lO5yRQOuj9mdHCKla201NNJLByhOUpUlos4aXBm+g0TsRoC9m5txxEqlW4sx4VXUaCJJXZPiHVUV7rQFsX218ieL/4/P8Aouoa33OHA9n7M74HZdEakktGOHJzrcBvD3A5lbUNN5dxEgpUZSadFobJ9fgnFOwfjSveh01OPioW4rLkiTrspxUFWOykE/E8NKdymV6nNw8LUSs+f0dtSljRcNXqstk8r1CPUwVZvlxMQn69h8TBhxa8hWAn1qiJy9V1OkhMgUKbWq0ILiovT2Kl2jEWuFhnVFqGAEr8km+YYraB6NJfcUOYbMY+WhWNlL6mgShpmj6EJ8xwUpzEh4ht0ejKnkL1FWPYWXkOsPv9iOWmFNw2FuoQg+G6sHGeXujkOymKzN4aH+ZRklgJwfEdYlYNF0QswlmMeW66maUN8xT6UZFRXDQnmNlsU7NnPxXmfb6Dwnm7MrkKK716hhlqG610NXYoc+W7r/yXJMGYyihDR0rfoEsdk47aAUbClSvUelmHgNgQkcVCrUopwdWNNdvURAhuVwIlgZJyyhDD4DDUzy2LhZobWZQnMQbNONuUCY6prXZHN4eLb6OmBFRrQHFcTZKU8KSeqDG66Cx6hla9i9mbm3Z40DLY+ah0crJZCf0+3ybiIcV1yRKXKiTTpp0OqToxsNEVWsDGCl1vZoWhYoa3MUg0LRpdeGThtdjZq/qgn6d0RFKpznN8N0Q2WwwxKDXmWWnY5uN5d/0SdcGnBQVyKZ8LsnrbRgUDOWV5l1X2eg0T6dFD6mZCQvcMV7IESNBqZ9mq/aLlsdRocgx2Ely9Dx30FUDGk8+w7KtCUVJXMWKYidK3QYlUpL0B4FO7DE8t3obxMO/wzcV5X2+ziNRVUYnNwdEdviYd/hmOIw2Ixz5ej0hJhjGEejiaBCUMYmHD0Rj1DK17GMaejku/8lUcrMYoj/UeCvD8ykWhjGXs6cP9NEykGhjCzPD2JP07oiAxqOjjx+46lp2ObjeXf9GMZhs78Xs/8ISvMuq+z0TGGZn+n0ycepoNQmDwP3DkGYxRLjaQ8nn2HZjA9muH2kx4DGFmeHsTifK+32cRjGoaOXH7jGMY2cT/2Q==');
@@ -64,21 +68,21 @@
         #container2 {
             float: left;
             width: 50%;
-
+            display: none;
         }
 
         #container3 {
             width: 50%;
             float: right;
-
+            border: thick solid #050505;
+            display: none;
         }
 
-        #space{
+        #space {
             float: left;
         }
 
         #imageCard {
-
         }
 
         #theme {
@@ -94,7 +98,7 @@
         }
 
         #card {
-            width: 25rem;
+            width: 27rem;
         }
 
         #cardCont {
@@ -111,40 +115,57 @@
         }
 
         #failedLogin {
-            color: #8d2b2b;
+            color: #a40b0b;
+        }
+
+        #emailHelp {
+            color: black;
         }
 
     </style>
 </head>
+
+<!-- Start of body -->
 <body id="body">
+
+<!-- Head and content -->
 <header id="head">
-    <div class="container">
-        <img id="image" src="BIUnew.jpg" alt="BIU">
-        <span id="webTitle">Board it up!</span>
-        <span id="moto">Best Board Games Around!</span>
-    </div>
+    <img id="image" src="BIUnew.jpg" alt="BIU">
+    <span id="webTitle">Board it up!</span>
+    <span id="moto">Best Board Games Around!
+        <i class="fa fa-puzzle-piece fa-lg" aria-hidden="true"></i>
+    </span>
+
 </header>
 
+<!-- Start of Javascript functions -->
 <script>
 
+    // register variables
     let passWord = ""
     let userName = ""
 
+    // register function
     function reigster() {
         passWord = document.getElementById("PW").value;
         userName = document.getElementById("EA").value;
+        // check length validation if yes then set inout to variables
         if ((passWord.length > 0 && passWord.length <= 20) && (userName.length > 0 && userName.length <= 20)) {
             passWord = document.getElementById("PW").value;
             userName = document.getElementById("EA").value;
+            //reset displayed value
             document.getElementById("PW").value = "";
             document.getElementById("EA").value = "";
             document.getElementById("failedLogin").innerHTML = (userName + " Successfully Registered");
-            console.log(passWord);
-            console.log(userName);
+            //console.log(passWord);
+            //console.log(userName);
+
+            // password or username was to long
         } else {
             document.getElementById("failedLogin").innerHTML = "incorrect password/ username length, please retry";
             document.getElementById("PW").value = "";
             document.getElementById("EA").value = "";
+            // reset value of variables back to nothing
             passWord = ""
             userName = ""
             //console.log(document.getElementById("PW").length)
@@ -152,9 +173,14 @@
         }
     }
 
+    //login function
     function Login() {
+        //check to see if current input field value matches registered value in variables
         if (document.getElementById("PW").value == passWord && document.getElementById("EA").value == userName) {
+            // call login function
             loggedIn();
+
+            // failed so display failure and reset input values
         } else {
             document.getElementById("failedLogin").innerHTML = "incorrect password/username  please retry";
             document.getElementById("PW").value = "";
@@ -166,55 +192,147 @@
         }
     }
 
+    // login function
     function loggedIn() {
+        // set displays for three main containers, used .display of .visibility as .display removes container entirely rather than hide it
         document.getElementById("container1").style.display = "none";
         document.getElementById("container2").style.display = "block";
         document.getElementById("container3").style.display = "block";
     }
 
+    // insert row function for cart
     function insertRow() {
-        let table = document.getElementById("checkout");
-        let row = table.insertRow(1);
-        let cell1 = row.insertCell(0);
-        let cell2 = row.insertCell(1);
-        let cell3 = row.insertCell(2);
-        let cell4 = row.insertCell(3);
-        let y = document.getElementById("quantity").value;
-        let x = document.getElementById("price").value;
-        x = x * y;
-        cell1.innerHTML = document.getElementById("gameName").value;
-        cell2.innerHTML = y;
-        cell3.innerHTML = document.getElementById("theme").value;
-        cell4.innerHTML = x;
-        addCart();
+        // check cart length, if over validated length, do nothing, else, creat new row
+        if (cartQuantity.length == 15) {
+            alert("Oops! Looks like ur cart is full!")
+
+            // new row
+        } else {
+            let table = document.getElementById("checkout");
+            // insert 1 row and 4 cells
+            let row = table.insertRow(1);
+            let cell1 = row.insertCell(0);
+            let cell2 = row.insertCell(1);
+            let cell3 = row.insertCell(2);
+            let cell4 = row.insertCell(3);
+            // calculate price based on quantity input
+            let y = document.getElementById("quantity").value;
+            let x = document.getElementById("price").value;
+            x = x * y;
+            // set cell values
+            cell1.innerHTML = document.getElementById("gameName").value;
+            cell2.innerHTML = y;
+            cell3.innerHTML = document.getElementById("theme").value;
+            cell4.innerHTML = x;
+            // call add cart function for totals at bottom of cart
+            addCart();
+        }
     }
 
+    // delete last row in cart
     function myDeleteFunction() {
+        // check to make sure cart isn't empty
         if (cartQuantity.length == 0) {
             alert("Oops! Looks Like the cart is empty")
         } else {
             document.getElementById("checkout").deleteRow(1);
+            // call minuscart
             minusCart();
         }
         //console.log(cartPrice)
     }
 
+    // game selector, works off of onchange() function for select input field id="gameName"
     function gameSelector() {
+        // big if else to check changed too game name, then changes the image, price, and description.
         if (document.getElementById("gameName").value == "Risk") {
-
-            document.getElementById("price").innerHTML = 30;
+            // price
+            document.getElementById("money").innerHTML = "33";
+            // image
+            let img = document.getElementById("imageCard");
+            img.src = "https://m.media-amazon.com/images/I/71ELGivFeJL._AC_SL1500_.jpg";
+            // description
+            document.getElementById("cardText").innerHTML = "Risk is a strategy board game of diplomacy, conflict and conquest for two to six players. The standard version is played on a board depicting " +
+                "a political map of the world, divided into forty-two territories, which are grouped into six continents. Turns rotate among players who control armies of playing pieces with which they attempt to capture territories from other players, with results determined by dice rolls." +
+                " Players may form and dissolve alliances during the course of the game. The goal of the game is to occupy every territory on the board and, in doing so, eliminate the other players.";
         }
         if (document.getElementById("gameName").value == "Pandemic") {
-            document.getElementById("price").innerHTML = 40;
+            document.getElementById("money").innerHTML = "28";
+            let img = document.getElementById("imageCard");
+            img.src = "https://m.media-amazon.com/images/I/71TJ++oCByL._AC_SX679_.jpg";
+            document.getElementById("cardText").innerHTML = "Pandemic is a cooperative board game designed by Matt Leacock and first published by Z-Man Games in the United States in 2008." +
+                " Pandemic is based on the premise that four diseases have broken out in the world, each threatening to wipe out a region. The game accommodates two to four players, each " +
+                "playing one of seven possible roles: dispatcher, medic, scientist, researcher, operations expert, contingency planner, or quarantine specialist. Through the combined effort of all the players, the goal is to discover all four cures before any of several game-losing conditions are reached.";
+        }
+        if (document.getElementById("gameName").value == "Checkers") {
+            document.getElementById("money").innerHTML = "9";
+            let img = document.getElementById("imageCard");
+            img.src = "https://m.media-amazon.com/images/I/71NnA4HYG+L._AC_SX679_.jpg";
+            document.getElementById("cardText").innerHTML = "Checkers, also known as draughts (/drɑːfts, dræfts/; British English), is a group of strategy board games for two players which involve diagonal moves of uniform game pieces and mandatory captures by jumping over opponent pieces." +
+                " Checkers is developed from alquerque. The term \"checkers\" derives from the checkered board which the game is played on, whereas \"draughts\" derives from the verb \"to draw\" or \"to move\".";
+        }
+        if (document.getElementById("gameName").value == "Clue") {
+            document.getElementById("money").innerHTML = "12";
+            let img = document.getElementById("imageCard");
+            img.src = "https://m.media-amazon.com/images/I/81+mFLBPbmL._AC_SX679_.jpg";
+            document.getElementById("cardText").innerHTML = "Cluedo (/ˈkluːdoʊ/), known as Clue in North America, is a murder mystery game for three to six players (depending on editions) that was devised in 1943 by British board game designer Anthony E. Pratt. The game was first manufactured by " +
+                "Waddingtons in the United Kingdom in 1949. Since then, it has been relaunched and updated several times, and it is currently owned and published by the American game and toy company Hasbro.\n" +
+                "The object of the game is to determine who murdered the game's victim, where the crime took place, and which weapon was used. Each player assumes the role of one of the six suspects and attempts to deduce the correct answer by strategically moving " +
+                "around a game board representing the rooms of a mansion and collecting clues about the circumstances of the murder from the other players";
+        }
+        if (document.getElementById("gameName").value == "Chess") {
+            document.getElementById("money").innerHTML = "27";
+            let img = document.getElementById("imageCard");
+            img.src = "https://m.media-amazon.com/images/I/71Q0kdRQ72L._AC_SX679_.jpg";
+            document.getElementById("cardText").innerHTML = "Chess is an abstract strategy game and involves no hidden information. It is played on a square chessboard with 64 squares arranged in an eight-by-eight grid. At the start, each player (one controlling the white pieces, the other controlling " +
+                "the black pieces) controls sixteen pieces: one king, one queen, two rooks, two bishops, two knights, and eight pawns. The object of the game is to checkmate the opponent's king, whereby the king is under immediate attack (in \"check\") and there is no way for it to escape. There are also several ways a game can end in a draw.";
+        }
+        if (document.getElementById("gameName").value == "Scrabble") {
+            document.getElementById("money").innerHTML = "19";
+            let img = document.getElementById("imageCard");
+            img.src = "https://m.media-amazon.com/images/I/81CW4gKChCL._AC_SX679_.jpg";
+            document.getElementById("cardText").innerHTML = "Scrabble is a word game in which two to four players score points by placing tiles, each bearing a single letter, onto a game board divided into a 15×15 grid of squares. The tiles must form words that, in crossword fashion, read left to right in rows or downward in columns, " +
+                "and be included in a standard dictionary or lexicon.";
+        }
+        if (document.getElementById("gameName").value == "Sorry!") {
+            document.getElementById("money").innerHTML = "21";
+            let img = document.getElementById("imageCard");
+            img.src = "https://m.media-amazon.com/images/I/918uKS0Uq1L._AC_SX679_.jpg";
+            document.getElementById("cardText").innerHTML = "Sorry! is a board game that is based on the ancient Indian cross and circle game Pachisi. Players move their three or four pieces around the board, attempting to get all of their pieces \"home\" before any other player." +
+                " Originally manufactured by W.H. Storey & Co in England and now by Hasbro, Sorry! is marketed for two to four players, ages 6 and up. The game title comes from the many ways in which a player can negate the progress of another, while issuing an apologetic \"Sorry!\"" +
+                "The objective is to be the first player to get all four of their coloured pawns from their start space, around the board to their \"home\" space. The pawns are normally moved in a clockwise direction but can be moved backward if directed. Movement of pawns is directed by the drawing of a card.";
+        }
+        if (document.getElementById("gameName").value == "Battleship") {
+            document.getElementById("money").innerHTML = "16";
+            let img = document.getElementById("imageCard");
+            img.src = "https://m.media-amazon.com/images/I/71ZsFGgra0L._AC_SX679_.jpg";
+            document.getElementById("cardText").innerHTML = "Battleship (also known as Battleships or Sea Battle) is a strategy type guessing game for two players. It is played on ruled grids (paper or board) on which each player's fleet of warships are marked. The locations of the fleets are concealed from the other player." +
+                " Players alternate turns calling \"shots\" at the other player's ships, and the objective of the game is to destroy the opposing player's fleet.";
+        }
+        if (document.getElementById("gameName").value == "Catan") {
+            document.getElementById("money").innerHTML = "44";
+            let img = document.getElementById("imageCard");
+            img.src = "https://m.media-amazon.com/images/I/818oIpXL7tL._AC_SX679_.jpg";
+            document.getElementById("cardText").innerHTML = "Catan, previously known as The Settlers of Catan or simply Settlers, is a multiplayer board game designed by Klaus Teuber. It was first published in 1995 in Germany by Franckh-Kosmos Verlag (Kosmos) as Die Siedler von Catan. Players take on the roles of settlers," +
+                " each attempting to build and develop holdings while trading and acquiring resources. Players gain victory points as their settlements grow; the first to reach a set number of victory points, typically 10, wins. The game and its many expansions are also published by Catan Studio, Filosofia, GP, Inc., 999 Games, Κάισσα (Káissa), and Devir.";
+        }
+        if (document.getElementById("gameName").value == "Monopoly") {
+            document.getElementById("money").innerHTML = "34";
+            let img = document.getElementById("imageCard");
+            img.src = "https://m.media-amazon.com/images/I/7139d7MIh9L._AC_SX679_.jpg";
+            document.getElementById("cardText").innerHTML = "Monopoly is a multi-player economics-themed board game. In the game, players roll two dice to move around the game board, buying and trading properties, and developing them with houses and hotels." +
+                " Players collect rent from their opponents, with the goal being to drive them into bankruptcy. Money can also be gained or lost through Chance and Community Chest cards, and tax squares. Players receive a stipend every time they pass \"Go\", and can end up in jail," +
+                " from which they cannot move until they have met one of three conditions. The game has numerous house rules, and hundreds of different editions exist, as well as many spin-offs and related media. Monopoly has become a part of international popular culture, having been licensed locally in more than 103 countries and printed in more than 37 languages.";
         }
     }
 
-
+    // arrays to track cart totals
     const cartPrice = [];
     const cartQuantity = [];
 
+    //
     function addCart() {
-
+        // sets price and q from selects and unshifts to respective arrays
         let y = document.getElementById("quantity").value;
         cartQuantity.unshift(y);
         //console.log(cartQuantity)
@@ -222,86 +340,116 @@
         x = x * y;
         cartPrice.unshift(x);
         //console.log(cartPrice)
+        // call addCarttotals to (re)calculate total quantity and price for cart
         addCarttotals();
     }
 
+    // minus cart function for removing last index from quantity and price arrays
     function minusCart() {
+        // shift both arrays
         cartPrice.shift();
         cartQuantity.shift();
+        // call addCarttotals to recalculate total quantiy and price for cart totals row
         addCarttotals();
     }
 
+    // varibles for quantity sum and price sum for cart totals
     var pSum = 0;
     var qSum = 0;
 
+    // functions for calculating cart totals
     function addCarttotals() {
+        //convert the two arrays quantity and price to number (currently string) and set to new variables to not wipe arrays
         const price = cartPrice.map(str => {
             return Number(str);
         });
         const quantity = cartQuantity.map(str => {
             return Number(str);
         });
+        // add up the two arrays
         for (let i = 0; i < cartPrice.length; i++) {
             pSum += price[i];
         }
         for (let i = 0; i < cartQuantity.length; i++) {
             qSum += quantity[i];
         }
+        // set the html of the two cart cells for total quantity and price
         document.getElementById("cartTotal").innerHTML = pSum;
         //console.log(pSum);
         document.getElementById("cartQuantity").innerHTML = qSum;
         //console.log(qSum);
+        // reset the two variables for sum of price and quantity
         pSum = 0;
         qSum = 0;
     }
 
+    // checkout function
     function checkout() {
-        for (let i = 0; cartQuantity.length > i; i++) {
-            document.getElementById("checkout").deleteRow(1);
+        // make sure its not empty
+        if (cartQuantity.length == 0) {
+            alert("Opps! looks like you cart is empty!")
+        } else {
+
+            // delete all rows in cart
+            for (let i = 0; cartQuantity.length > i; i++) {
+                document.getElementById("checkout").deleteRow(1);
+            }
+            // wipe the two arrays for quantity and price
+            cartPrice.length = 0;
+            cartQuantity.length = 0;
+            alert("Thank you for your pruchase!");
+            // call addCarttotals to recalculate sum of price and quantity
+            addCarttotals();
         }
-        cartPrice.length = 0;
-        cartQuantity.length = 0;
-        alert("Thank you for your pruchase!");
-        addCarttotals();
     }
 
 </script>
 
+<!-- navbar class that is static, displays welcome and mission statement -->
 <div id="navBar">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <span id="intro">
-        We here at Board it up! strive to deliver the best board games on the market. Everything from fun themed Risk
-        and the classics such as Monopoly and life. login to browse our action packed option of board games, or visit our
+        &nbsp;&nbsp;&nbsp;We here at Board it up! strive to deliver the best board games on the market. Everything from fun themed Risk
+        and the classics such as Monopoly and Catan. Register and login to browse our action packed option of board games, or visit our
         store location.
     </span>
     </nav>
 </div>
 
+<!-- container than contains the login and register content -->
 <div class="container" id="container1">
     <br>
     <label id="failedLogin">
     </label>
+    <!-- username form -->
     <div class="form-group">
         <label> User Name </label>
         <input id="EA" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
                placeholder="Enter username">
     </div>
+    <!-- password form -->
     <div class="form-group">
         <label>Password</label>
         <input id="PW" type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
         <small id="emailHelp" class="form-text text-muted">Passwords/User Name should be limited to less than 20
             characters</small>
     </div>
+    <!-- login and register buttons -->
     <button type="submit" class="btn btn-primary" onclick="Login()">Login</button>
     <button type="submit" class="btn btn-primary" onclick="reigster()">Register</button>
 </div>
 
+<!-- second continer that contains both the card form and cart chart -->
 <div class="container" id="container">
+    <br>
+    <!-- container for card -->
     <div class="container" id="container2">
         <br>
         <p>Start Shopping!</p>
+        <!-- card -->
         <div id="card" class="card">
-            <select id="gameName" class="form-control form-control-sm" onchange="gameSelector">
+            <!-- game selection -->
+            <select id="gameName" class="form-control form-control-sm" onchange="gameSelector()">
                 <option>Risk</option>
                 <option>Pandemic</option>
                 <option>Checkers</option>
@@ -313,48 +461,64 @@
                 <option>Catan</option>
                 <option>Monopoly</option>
             </select>
-            <img id="imageCard" class="card-img-top"
-                 src="https://m.media-amazon.com/images/I/71ELGivFeJL._AC_SL1500_.jpg" alt="Risk">
+            <!-- game image -->
+            <img id="imageCard" class="card-img-top" src="https://m.media-amazon.com/images/I/71ELGivFeJL._AC_SL1500_.jpg" alt="image">
+            <!-- game description -->
             <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                    the card's content.</p>
+                <p class="card-text" id="cardText">Risk is a strategy board game of diplomacy, conflict and conquest
+                    for two to six players. The standard version is played on a board depicting a political map of the
+                    world, divided into forty-two territories, which are grouped into six continents. Turns rotate among
+                    players who control armies of playing pieces with which they attempt to capture territories from
+                    other players, with results determined by dice rolls. Players may form and dissolve alliances during
+                    the course of the game. The goal of the game is to occupy every territory on the board and, in doing
+                    so, eliminate the other players.</p>
+                <!-- container for card contents -->
                 <div class="container" id="cardCont">
+                    <!-- quantity selector -->
                     <label>Quantity:</label>
                     <select id="quantity" class="form-control form-control-sm">
                         <option>1</option>
                         <option>2</option>
                         <option>3</option>
                     </select>
+                    <!-- theme selector -->
                     <label>&nbsp;Theme:</label>
                     <select id="theme" class="form-control form-control-sm">
+                        <option>Plain</option>
                         <option>Dark</option>
                         <option>Light</option>
                     </select>
+                    <!-- unit price indicator -->
                     <label>&nbsp;Price(unit):</label>
                     <select id="price" class="form-control form-control-sm">
-                        <option>30</option>
+                        <option id="money">33</option>
                     </select>
                     <br>
                 </div>
                 <br>
+                <br>
+                <!-- add to cart button -->
                 <a class="btn btn-primary" id="addTocart" onclick="insertRow()">add to cart</a>
             </div>
         </div>
     </div>
+    <br>
+    <br>
+    <br>
+    <!-- containter for cart  -->
     <div class="container" id="container3">
         <br>
-        <!--
-        first is version 5 and second is version 6
-        -->
-        <i class="fas fa-shopping-cart">5.15 cart</i>
-        <i class="fa-solid fa-cart-shopping">6 cart</i>
-        <i class="fa fa-car" aria-hidden="true"></i> car <br>
+        <!-- font awesome logo and delete last item + checkout buttons -->
+        <i class="fa fa-shopping-cart fa-lg" aria-hidden="true">&nbsp;</i>
         <button type="button" class="btn btn-danger" onclick="myDeleteFunction()">Delete last item</button>
         <button type="button" class="btn btn-success" onclick="checkout()">Checkout</button>
+        Limit of 15 entries(45 quantity).
         <br>
         <br>
+        <!-- cart table -->
         <table class="table table-dark" id="checkout">
             <thead>
+            <!-- head -->
             <tr>
                 <th scope="col">Game</th>
                 <th scope="col">Quantity</th>
@@ -363,6 +527,7 @@
             </tr>
             </thead>
             <tbody>
+            <!-- totals -->
             <tr>
                 <th scope="row">Total Quantity</th>
                 <td colspan="1" id="cartQuantity">0</td>
@@ -373,6 +538,8 @@
         </table>
     </div>
 </div>
+
+<!-- keep footer from covering bottom of page -->
 <div class="container" id="space">
     <br>
     <br>
@@ -383,6 +550,8 @@
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
 </body>
+
+<!-- footer -->
 <footer id="footer">
     &copy; Board it up! - 123 Fake st Pottstown Pa, (484) 345-5745
 </footer>
